@@ -143,7 +143,7 @@ export default function ProfileLink({
   }[position ?? 0] ?? '#000000'
 
   const medalTextColor = medalColor === '#000000' ? '#ffffff' : '#1a1a1a'
-  const normalizedUsername = user.username.trim()
+  const normalizedUsername = user.username?.trim()
   const addressSlug = user.deposit_wallet_address ?? user.address ?? ''
   const displayUsername = normalizedUsername || (addressSlug ? truncateAddress(addressSlug) : 'Anonymous')
   const titleValue = normalizedUsername || addressSlug || displayUsername
