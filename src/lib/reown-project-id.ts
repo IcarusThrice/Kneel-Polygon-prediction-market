@@ -1,1 +1,1 @@
-export const reownProjectId = process.env.REOWN_APPKIT_PROJECT_ID ?? ''
+export const reownProjectId = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID ?? ''
