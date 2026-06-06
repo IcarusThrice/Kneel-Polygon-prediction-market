@@ -1,5 +1,5 @@
 export function isCronAuthorized(header: string | null, cronSecret?: string): boolean {
-  const secret = cronSecret ?? process.env.CRON_SECRET ?? 'qYGmX03vBul91RUhmhlJyEzf'
+  const secret = cronSecret ?? process.env.CRON_SECRET
   if (!secret) {
     return false
   }
